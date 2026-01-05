@@ -11,8 +11,14 @@ body,
 }
 
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
-    "Inter", sans-serif;
+  font-family: "Century Gothic", "Century", -apple-system, BlinkMacSystemFont,
+    system-ui, sans-serif;
+  background-color: #f9fafb;
+  color: #111827;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.dark body {
   background-color: #020617;
   color: #f9fafb;
 }

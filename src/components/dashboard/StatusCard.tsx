@@ -16,19 +16,19 @@ export const StatusCard: React.FC<StatusCardProps> = ({
 }) => {
   const colour =
     variant === "success"
-      ? "text-emerald-400"
+      ? "text-emerald-600 dark:text-emerald-400"
       : variant === "danger"
-      ? "text-red-400"
-      : "text-neutral-100";
+      ? "text-red-600 dark:text-red-400"
+      : "text-neutral-900 dark:text-neutral-100";
 
   return (
-    <article className="flex flex-col gap-1 rounded-xl border border-white/10 bg-neutral-900/80 px-3 py-2.5 shadow-sm shadow-black/40">
-      <p className="text-[11px] font-medium uppercase tracking-wide text-neutral-400">
+    <article className="flex flex-col gap-1 rounded-xl border border-neutral-300 bg-neutral-100 px-3 py-2.5 dark:border-neutral-800 dark:bg-neutral-900">
+      <p className="text-[11px] font-medium uppercase tracking-wide text-neutral-800 dark:text-neutral-400">
         {label}
       </p>
       <p className={`text-lg font-semibold ${colour}`}>{formatKES(value)}</p>
       {trendLabel ? (
-        <p className="text-[11px] text-neutral-400">{trendLabel}</p>
+        <p className="text-[11px] text-neutral-800 dark:text-neutral-400">{trendLabel}</p>
       ) : null}
     </article>
   );
