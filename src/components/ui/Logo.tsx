@@ -59,9 +59,9 @@ export const Logo: React.FC<LogoProps> = ({ size = 32, withWordmark = false }) =
       </svg>
 
       {withWordmark && (
-        <span className="text-sm font-semibold tracking-tight text-neutral-50">
+        <span className="text-sm font-semibold tracking-tight text-neutral-900 dark:text-neutral-50">
           KRA‑Ready
-          <span className="ml-1 text-[11px] font-normal uppercase text-emerald-300">
+          <span className="ml-1 text-[11px] font-normal uppercase text-emerald-700 dark:text-emerald-300">
             Margin
           </span>
         </span>
